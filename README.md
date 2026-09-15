@@ -1,33 +1,70 @@
-# form-scan
+# Revamp365
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+A polished marketing homepage for **Revamp365**, a practical digital growth studio created and developed by **Afaq Ahmad Developer**.
 
-## Built with v0
+## Overview
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
+Revamp365 helps ambitious businesses turn digital activity into measurable growth through focused strategy, search visibility, conversion-led websites, social content, and ongoing optimization.
 
-[Continue working on v0 →](https://v0.app/chat/projects/prj_scpcixStZyMVFh9q4cSNWIxIvADK)
+The homepage is designed to communicate the brand clearly and confidently, with:
 
-## Getting Started
+- A high-impact hero section with animated 3D-style visual elements
+- Services and growth-focused positioning
+- Process and credibility sections
+- Client testimonials and performance stats
+- Frequently asked questions
+- A responsive contact form
+- Branded Revamp365 favicon and metadata
+- Responsive layouts for desktop and mobile screens
 
-First, run the development server:
+## Tech stack
+
+- Next.js 16 App Router
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Lucide React icons
+- Vercel Analytics in production
+
+## Getting started
+
+Install dependencies and start the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available scripts
 
-## Learn More
+```bash
+pnpm dev      # Start the development server
+pnpm build    # Create a production build
+pnpm start    # Start the production server
+```
 
-To learn more, take a look at the following resources:
+## Project structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
+```text
+app/
+  layout.tsx       # Metadata, favicon, analytics, and root layout
+  page.tsx         # Revamp365 homepage content and interactions
+  globals.css      # Brand styles, responsive layout, and animations
+public/
+  favicon.svg      # Custom Revamp365 browser icon
+components/ui/     # Shared UI primitives
+```
+
+## Brand and authorship
+
+This website was built for Revamp365 by **Afaq Ahmad Developer**. The visual direction uses a calm green palette, editorial typography, generous spacing, and purposeful motion to present the brand as practical, confident, and growth-minded.
+
+## Deployment
+
+The project can be deployed to Vercel or any platform that supports Next.js 16. Build the project with `pnpm build`, then serve it with `pnpm start`.
+
+## License
+
+All brand copy, visual direction, and custom implementation are intended for Revamp365. Contact Afaq Ahmad Developer before reusing project-specific content or assets.

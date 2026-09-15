@@ -4,24 +4,13 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Revamp365 — More leads. Less noise.',
-  description: 'Practical digital marketing for ambitious businesses. More leads, less noise, and a clearer path to growth.',
-  generator: 'v0.app',
+  description: 'Revamp365 is a practical digital growth studio by Afaq Ahmad Developer. More leads, less noise, and a clearer path to growth.',
+  authors: [{ name: 'Afaq Ahmad Developer' }],
+  creator: 'Afaq Ahmad Developer',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
   },
 }
 
