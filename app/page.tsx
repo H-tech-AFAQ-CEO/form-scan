@@ -3,10 +3,10 @@
 import { useState } from 'react'
 
 const services = [
-  { number: '01', title: 'Pay Per Lead', text: 'Stop chasing. Start closing. Get qualified leads delivered directly to your inbox.' },
-  { number: '02', title: 'Web Development', text: 'High-converting websites built to turn your traffic into conversations.' },
-  { number: '03', title: 'SEO Services', text: 'Be found by the people already searching for what you do best.' },
-  { number: '04', title: 'Social Media', text: 'Build a brand people remember, trust, and share.' },
+  { number: '01', icon: '↗', title: 'Pay Per Lead', text: 'Stop chasing. Start closing. Get qualified leads delivered directly to your inbox.' },
+  { number: '02', icon: '⌘', title: 'Web Development', text: 'High-converting websites built to turn your traffic into conversations.' },
+  { number: '03', icon: '⌕', title: 'SEO Services', text: 'Be found by the people already searching for what you do best.' },
+  { number: '04', icon: '◌', title: 'Social Media', text: 'Build a brand people remember, trust, and share.' },
 ]
 
 const testimonials = [
@@ -51,8 +51,12 @@ export default function Page() {
         <div className="hero-art" aria-hidden="true">
           <div className="art-circle art-circle-one" />
           <div className="art-circle art-circle-two" />
-          <div className="art-card art-card-main"><span className="art-label">MONTHLY GROWTH</span><strong>+68%</strong><div className="mini-chart"><i /><i /><i /><i /><i /><i /><i /></div></div>
+          <div className="art-orbit orbit-one" />
+          <div className="art-orbit orbit-two" />
+          <div className="art-pill art-pill-top"><span className="pill-spark">✦</span> PERFORMANCE</div>
+          <div className="art-card art-card-main"><span className="art-label">MONTHLY GROWTH</span><strong>+68%</strong><div className="mini-chart"><i /><i /><i /><i /><i /><i /><i /></div><span className="chart-caption">Your momentum is up</span></div>
           <div className="art-card art-card-small"><span className="check">✓</span><span>New lead<br /><b>just landed</b></span></div>
+          <div className="art-pill art-pill-bottom"><span className="pill-spark">●</span> 24/7 MOMENTUM</div>
           <span className="art-word">GROW</span>
         </div>
       </section>
@@ -65,7 +69,7 @@ export default function Page() {
 
       <section id="services" className="services section-pad">
         <div className="section-heading"><p className="eyebrow"><span className="eyebrow-line" /> What we do</p><h2>Marketing that<br /><em>moves the needle.</em></h2></div>
-        <div className="services-list">{services.map((service) => <article className="service-row" key={service.number}><span className="service-number">{service.number}</span><h3>{service.title}</h3><p>{service.text}</p><span className="service-arrow">↗</span></article>)}</div>
+        <div className="services-list">{services.map((service) => <article className="service-row" key={service.number}><span className="service-number">{service.number}</span><span className="service-icon" aria-hidden="true">{service.icon}</span><h3>{service.title}</h3><p>{service.text}</p><span className="service-arrow">↗</span></article>)}</div>
       </section>
 
       <section id="how-it-works" className="process section-pad">
