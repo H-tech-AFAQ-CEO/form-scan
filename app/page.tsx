@@ -15,6 +15,19 @@ const testimonials = [
   { quote: 'Finally, marketing that feels like a partner instead of another bill to worry about.', name: 'David R.', role: 'Director, ClearPath Finance' },
 ]
 
+const faqs = [
+  { question: 'What makes Revamp365 different?', answer: 'We focus on practical growth: clear strategy, measurable actions, and marketing built around your actual business goals.' },
+  { question: 'Do I need a big marketing budget?', answer: 'No. We start with the highest-impact opportunities and build a plan that makes sense for your stage and budget.' },
+  { question: 'How quickly can we get started?', answer: 'After a quick discovery conversation, we map your first growth sprint and the next steps are ready to go.' },
+  { question: 'Can you work with my existing team?', answer: 'Absolutely. We can lead the strategy, plug into your current workflow, or handle the full marketing engine.' },
+]
+
+const stats = [
+  { value: '365', label: 'days of momentum' },
+  { value: '4x', label: 'core growth services' },
+  { value: '1:1', label: 'human partnership' },
+]
+
 export default function Page() {
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -81,7 +94,11 @@ export default function Page() {
 
       <section className="testimonials section-pad"><div className="section-heading compact"><p className="eyebrow"><span className="eyebrow-line" /> The good stuff</p><h2>Don&apos;t just take<br /><em>our word for it.</em></h2></div><div className="testimonial-grid">{testimonials.map((item) => <figure key={item.name} className="testimonial"><div className="stars">★★★★★</div><blockquote>“{item.quote}”</blockquote><figcaption><strong>{item.name}</strong><span>{item.role}</span></figcaption></figure>)}</div></section>
 
-      <section id="contact" className="contact section-pad"><div><p className="eyebrow"><span className="eyebrow-line" /> Ready when you are</p><h2>Let&apos;s make<br /><em>something happen.</em></h2></div><div className="contact-side"><p>Tell us a little about where you&apos;re headed. We&apos;ll take it from there.</p><a className="button button-dark" href="mailto:hello@revamp365.ai">hello@revamp365.ai <span>↗</span></a></div></section>
+      <section className="stats-band section-pad"><div className="stats-intro"><p className="eyebrow eyebrow-light"><span className="eyebrow-line" /> Built for momentum</p><h2>Small moves.<br /><em>Big difference.</em></h2></div><div className="stats-grid">{stats.map((stat) => <div className="stat" key={stat.value}><strong>{stat.value}</strong><span>{stat.label}</span></div>)}</div></section>
+
+      <section className="faq-section section-pad"><div className="section-heading compact"><p className="eyebrow"><span className="eyebrow-line" /> Questions, answered</p><h2>Clear answers<br /><em>before we begin.</em></h2></div><div className="faq-list">{faqs.map((faq) => <details className="faq-item" key={faq.question}><summary>{faq.question}<span>+</span></summary><p>{faq.answer}</p></details>)}</div></section>
+
+      <section id="contact" className="contact section-pad"><div><p className="eyebrow"><span className="eyebrow-line" /> Ready when you are</p><h2>Let&apos;s make<br /><em>something happen.</em></h2></div><div className="contact-side"><p>Tell us a little about where you&apos;re headed. We&apos;ll take it from there.</p><form className="contact-form" onSubmit={(event) => event.preventDefault()}><label><span className="sr-only">Your name</span><input required name="name" placeholder="Your name" /></label><label><span className="sr-only">Your email</span><input required type="email" name="email" placeholder="Email address" /></label><label><span className="sr-only">Tell us about your project</span><textarea required name="message" placeholder="What are you hoping to grow?" rows={3} /></label><button className="button button-dark" type="submit">Start a conversation <span>↗</span></button></form></div></section>
 
       <footer><a className="brand" href="#top"><span className="brand-mark">R</span><span>REVAMP<span className="brand-muted">365</span></span></a><span>© 2025 Revamp365. Built for better.</span><a href="#top">Back to top ↑</a></footer>
     </main>
