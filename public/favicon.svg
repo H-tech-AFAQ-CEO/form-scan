@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Revamp365">
+  <rect width="64" height="64" rx="16" fill="#123d2a"/>
+  <path d="M18 14h16.5c9.1 0 14.5 4.3 14.5 11.4 0 5.3-3.1 9.1-8.3 10.8L51 50H39.5L30.2 37H28v13H18V14Zm10 8v7h6c3.2 0 5-1.2 5-3.6 0-2.3-1.8-3.4-5-3.4h-6Z" fill="#d5e9dc"/>
+  <circle cx="49" cy="15" r="4" fill="#b7d6c0"/>
+</svg>
